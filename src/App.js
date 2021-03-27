@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowerRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import VendingMachine from "./VendingMachine";
 import Sardines from "./Chips";
@@ -10,22 +10,22 @@ import Soda from "./Soda";
 
 function App() {
   return (
-    <BrowerRouter>
+    <BrowserRouter>
     <Switch>
       <Route path="/" exact>
         <VendingMachine />
       </Route>
       <Route path="/soda" exact>
         <Soda />
-        </Route>
+      </Route>
       <Route path="/chips" exact>
         <Chips />
-        </Route>
+      </Route>
       <Route path="/sardines" exact>
         <Sardines />
-        </Route>
+      </Route>
     </Switch>
-    </BrowerRouter>
+  </BrowserRouter>
   );
 }
 
